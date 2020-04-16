@@ -1,0 +1,16 @@
+def all_outcomes(outcomes, k):
+    '''
+    Takes a set of outcomes and creates all possible
+    words of length k. No repititions allowed.
+    '''
+    lst_outcomes = sorted(list(outcomes))
+    if k == 1:
+        return lst_outcomes
+    
+    result = []
+    for letter in lst_outcomes:
+        outcomes2 = list(lst_outcomes)
+        outcomes2.remove(letter)
+        for word in all_outcomes(outcomes2, k-1):
+            result.append(letter + word)
+    return result
