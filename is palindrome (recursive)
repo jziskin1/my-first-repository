@@ -1,0 +1,15 @@
+def is_palindrome(n):
+    '''
+    Takes an integer and returns whether the integer is
+    a palindrome. 
+    '''
+    s = str(n)
+    if len(s) == 1:
+        return True
+    if s[0] == s[-1]:
+        if len(s) == 2:
+            return True
+        return is_palindrome(s[1:-1])
+    else:
+        return False
+        
