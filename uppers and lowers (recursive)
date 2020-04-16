@@ -1,0 +1,17 @@
+def uppers(string):
+    """
+    Takes a sting and prints every combination of uppercase
+    and lowercase letters in that string
+    """
+    if string == '':
+        return ''
+    elif len(string) == 1:
+        return [string.lower(), string.upper()]
+    else:
+        first = string[0]
+        rest_strings = uppers(string[1:])
+        temp_strings = []
+        for word in rest_strings:
+            temp_strings.append(first.lower() + word) 
+            temp_strings.append(first.upper() + word)   
+        return temp_strings
