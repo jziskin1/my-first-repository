@@ -1,0 +1,16 @@
+def gen_bin_strings_no11(k):
+    '''
+    Generate all binary strings of length k
+    without consecutive 1s
+    '''
+    if k == 1:
+        return ['0','1']
+    
+    else:
+        result = []
+        for string in gen_bin_strings_no11(k - 1):
+            result.append(string + '0')
+            if string[-1] == '0':
+                result.append(string + '1')
+        return result
+                
