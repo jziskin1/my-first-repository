@@ -1,3 +1,5 @@
+# General Git Commands and their functions
+
 git init -> Create an empty Git repository or reinitialize an existing one
 git clone -> Clone a repository into a new directory
 
@@ -15,3 +17,18 @@ git checkout -> Work on different branch
 git commit -m 'Commit notes' -> Record changes to the repository
 git push -> Update remote refs along with associated objects
 git log -> Show commit logs
+
+
+
+# Git workflow with branches
+
+git branch branchname                   ->      create new branch
+git checkout branchname                 ->      work on new branch
+git status                              ->      see what changes were made
+git add -A                              ->      add to staging directory
+git add commit m 'ex'                   ->      commit changes
+git push u- origin branchname           ->      push that branch to remote repository
+git pull origin master                  ->      pull in changes from master branch
+git merge branchname                    ->      merge branch with master
+git branch -d branchname                ->      delete branch locally
+git push origin --delete branchname     ->      delete branch from remote repository
