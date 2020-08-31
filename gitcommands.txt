@@ -1,0 +1,17 @@
+git init -> Create an empty Git repository or reinitialize an existing one
+git clone -> Clone a repository into a new directory
+
+git mv -> Move or rename a file, a directory, or a symlink
+git rm -> Remove files from the working tree and from the index
+
+git add -> Add file contents to the index
+git reset -> Reset current HEAD to the specified state (undoes git add)
+git grep -> Print lines matching a pattern
+git diff -> Show changes between commits, commit and working tree, etc
+git status -> Show the working tree status
+git branch -> List, create, or delete branches
+git checkout -> Work on different branch
+
+git commit -m 'Commit notes' -> Record changes to the repository
+git push -> Update remote refs along with associated objects
+git log -> Show commit logs
